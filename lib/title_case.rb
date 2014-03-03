@@ -1,5 +1,6 @@
 
 def title_case(string)
   result = ''
-  string.capitalize
+  string.each_line(' ') {|s| result += s.capitalize}
+  result
 end
